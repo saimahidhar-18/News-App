@@ -24,7 +24,7 @@ function About() {
         Wanna Contribute to the Project ? :
         <a
           className="p-3 bg-red-500 rounded-md text-white ml-2"
-          href="https://github.com/srujan-here/Github_finder"
+          href="https://github.com/srujan-here/News-App/tree/main"
           target="_blank"
         >
           Git Repo

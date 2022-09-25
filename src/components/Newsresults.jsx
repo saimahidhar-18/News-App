@@ -15,8 +15,8 @@ const Newsresults = () => {
   if (!loading) {
     return (
       <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-8 text-black">
-        {topnews.map((news) => (
-         <div className="card w-50 bg-red-500 shadow-xl">
+        {topnews.map((news,index) => (
+         <div key={index} className="card w-50 bg-red-500 shadow-xl">
          <figure className="px-10 pt-10">
            <img src={news.urlToImage} alt="Shoes" className="rounded-xl" />
          </figure>

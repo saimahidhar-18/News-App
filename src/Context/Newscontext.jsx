@@ -11,7 +11,8 @@ export const NewsProvider = ({ children }) => {
 
 const fetchtopnews = async () => {
     Axios.get(
-      "https://newsapi.org/v2/top-headlines?country=in&apiKey=907298f5d3944575b452fdcf0426f496"
+      "https://newsapi.org/v2/top-headlines?country=in&apiKey=907298f5d3944575b452fdcf0426f496",
+      {mode:'cors'}
     ).then((response) => {
       settopnews(response.data.articles);
       setloading(false);
